@@ -11,5 +11,7 @@ namespace KanbanApi.Models
         public int ColumnId { get; set; }
         public DateTime CreatedAt { get; set; }
         public Column Column { get; set; }
+        public string? AssignedToUserId { get; set; }
+        public ApplicationUser AssignedTo { get; set; }
     }
 }
